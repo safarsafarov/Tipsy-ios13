@@ -44,6 +44,9 @@
                                                         <state key="normal" title="0%">
                                                             <color key="titleColor" red="0.93325155969999996" green="0.93338567019999996" blue="0.93322223419999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZB-Vq-qwG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7y6-Kf-yF0">
                                                         <rect key="frame" x="100.5" y="0.0" width="173" height="54"/>
@@ -55,6 +58,9 @@
                                                         <state key="normal" title="10%">
                                                             <color key="titleColor" red="0.93325155969999996" green="0.93338567019999996" blue="0.93322223419999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RM0-sd-7rp"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtR-dU-EKt">
                                                         <rect key="frame" x="273.5" y="0.0" width="100.5" height="54"/>
@@ -66,6 +72,9 @@
                                                         <state key="normal" title="20%">
                                                             <color key="titleColor" red="0.93325155969999996" green="0.93338567019999996" blue="0.93322223419999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ack-Wb-rm5"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -103,6 +112,9 @@
                                                             <constraint firstAttribute="width" constant="94" id="sc0-qS-1tJ"/>
                                                         </constraints>
                                                         <color key="tintColor" red="0.93325155969999996" green="0.93338567019999996" blue="0.93322223419999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="LCG-ec-upQ"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                             </stackView>
@@ -184,6 +196,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ptx-Zl-eGc"/>
                     </view>
+                    <connections>
+                        <outlet property="billTextField" destination="wcN-ka-Q4F" id="cAj-K4-EB5"/>
+                        <outlet property="splitNumberLabel" destination="bSy-Yc-886" id="1qj-Sj-VN3"/>
+                        <outlet property="tenPctButton" destination="7y6-Kf-yF0" id="pQx-5b-NNM"/>
+                        <outlet property="twentyPctButton" destination="UtR-dU-EKt" id="MH8-Yq-V5N"/>
+                        <outlet property="zeroPctButton" destination="XzR-0E-Xf7" id="4I9-3L-q3o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

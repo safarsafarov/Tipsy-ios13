@@ -23,6 +23,7 @@ class CalculatorViewController: UIViewController {
     
     
     @IBAction func tipChanged(_ sender: UIButton) {
+        zeroPctButton.isSelected = true
         
     }
     

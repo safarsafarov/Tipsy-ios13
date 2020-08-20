@@ -23,8 +23,15 @@ class CalculatorViewController: UIViewController {
     
     
     @IBAction func tipChanged(_ sender: UIButton) {
-        zeroPctButton.isSelected = true
-        
+        if zeroPctButton.isSelected == true {
+            self.zeroPctButton.backgroundColor = UIColor.green
+        } else if tenPctButton.isSelected == true {
+            self.tenPctButton.backgroundColor = UIColor.green
+        } else if twentyPctButton.isSelected == true {
+            self.twentyPctButton.backgroundColor = UIColor.green
+        } else {
+           print("button hasn't been pressed")
+        }
     }
     
 
